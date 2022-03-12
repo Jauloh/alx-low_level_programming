@@ -16,9 +16,9 @@ int main(void)
 	i = n % 10;
 	if (i > 5)
 		printf("%s %d is %d and is greater than 5\n", world, n, i);
-	if (i == 0)
+	else if (i == 0)
 		printf("%s %d is %d and is 0\n", world, n, i);
-	if (i < 6)
+	else if (i < 6)
 		printf("%s %d is %d and is less than 6 and not 0\n", world, n, i);
 	return (0);
 }
