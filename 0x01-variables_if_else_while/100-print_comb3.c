@@ -1,23 +1,31 @@
 #include <stdio.h>
 /**
-* main - prints all possible different combination of two digits
+* main - Print all possible different combinaisin
 *
-* Return: Always 0 (succes)
+* Return: Always 0 (success)
 */
 int main(void)
 {
-	int d;
+	int n1 = 48;
+	int n2;
+	int compt = 44;
 
-	for (d = 0; d < 90; d++)
+	while (n1 <= 57)
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 89)
+		n2 = n1 + 1;
+		while (n2 <= 57)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(n1);
+			putchar(n2);
+			if (n1 != 56 || n2 != 57)
+			{
+				putchar(compt);
+				putchar(32);
+			}
+			n2 += 1;
 		}
-	}
+		n1 += 1;
+		}
 	putchar('\n');
 	return (0);
 }
