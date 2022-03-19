@@ -32,7 +32,7 @@ _putchar (35);
 
 d--;
 
-_putchar ('\n');
+_putchar('\n');
 
 
 }
@@ -41,6 +41,6 @@ _putchar ('\n');
 
 else
 {
-_putchar ('\n');
+_putchar('\n');
 }
 }
