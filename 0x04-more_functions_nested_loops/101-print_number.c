@@ -4,7 +4,7 @@
  * @n: input
  * Return: inputted integer
  */
-void print_number()
+void print_number(int n)
 {
 	_putchar(n);
 	_putchar('\n');
